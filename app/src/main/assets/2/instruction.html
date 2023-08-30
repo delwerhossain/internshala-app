@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rail Sheba</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo_1.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+    />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/ionicons.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/simple-line-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+    <!--Morris Chart -->
+    <link rel="stylesheet" href="assets/js/index/morris-chart/morris.css" />
+    <!-- owl_carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/owl.carousel.min.css"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="loader_wrpper">
+      <div class="loader_style"></div>
+    </div>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="main-header">
+        <div class="container_header">
+          <div class="logo d-flex align-items-center">
+            <a href="#">
+              <strong class="logo_icon">
+                <img src="assets/images/small-logo.png" alt="" />
+              </strong>
+              <span class="logo-default">
+                <!-- <img src="assets/images/logo2.png" alt="" /> -->
+                <h3 class="logo-text">IRCTC - Indian Railway</h3>
+              </span>
+            </a>
+            <div class="icon_menu full_menu">
+              <a href="#!" class="menu-toggler sidebar-toggler"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header_End -->
+      <!-- Content_right -->
+      <div class="container_full">
+        <div class="side_bar dark_blue side_bg_img scroll_auto">
+          <div class="user-panel">
+            <div class="user_image">
+              <img
+                src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+                class="img-circle mCS_img_loaded"
+                alt="User Image"
+              />
+            </div>
+            <div class="info">
+              <p>E-Ticketing</p>
+            </div>
+          </div>
+          <ul id="dc_accordion" class="sidebar-menu tree">
+            <li class="menu_sub">
+              <a href="index.html">
+                <i class="fa fa-home"></i> <span>Home</span></a
+              >
+            </li>
+            <!-- <li class="menu_sub">
+              <a href="https://railapp.railway.gov.bd/auth/login">
+                <i class="fa fa-lock"></i> <span>Login</span></a
+              >
+            </li> -->
+            <li class="menu_sub">
+              <a href="https://www.irctc.co.in/nget/profile/user-registration"
+                ><i class="fa fa-user-plus"></i>
+                <span> Login & SignUp</span></a
+              >
+            </li>
+            <!-- <li class="menu_sub">
+              <a href="https://railapp.railway.gov.bd/profile">
+                <i class="fa fa-user"></i> <span>My Profile</span></a
+              >
+            </li> -->
+            <li class="menu_sub">
+              <a href="https://www.irctc.co.in/nget/train-search">
+                <i class="fa fa-shopping-cart"></i> <span>Book Ticket</span></a
+              >
+            </li>
+            <li class="menu_sub">
+              <a
+                href="https://www.irctc.co.in/nget/booking/check-train-schedule"
+              >
+                <i class="fa fa-calendar"></i> <span>Train Schedule</span></a
+              >
+            </li>
+            <li class="menu_sub">
+              <a href="instruction.html">
+                <i class="fa fa-address-book"></i> <span>Instructions</span></a
+              >
+            </li>
+            <li class="menu_sub">
+              <a href="https://www.irctc.co.in/nget/enquiry/alerts">
+                <svg
+                  class="slide-menu-icon mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
+                  />
+                </svg>
+                <span>Alerts</span></a
+              >
+            </li>
+            <li class="menu_sub">
+              <a
+                href="https://railmadad.indianrailways.gov.in/madad/final/home.jsp"
+              >
+                <i class="fa fa-history"></i> <span>Complaints</span></a
+              >
+            </li>
+            <li class="menu_sub">
+              <a href="https://enquiry.indianrail.gov.in/mntes/">
+                <i class="fa fa-search"></i> <span>Track Your Train</span></a
+              >
+            </li>
+            <li class="menu_sub">
+              <a
+                href="https://enquiry.indianrail.gov.in/mntes/q?opt=MainMenu&subOpt=liveStation&excpType="
+              >
+                <svg
+                  class="slide-menu-icon mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1.2em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256-96a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+                  />
+                </svg>
+                <span>Live Station</span></a
+              >
+            </li>
+            <!-- <li class="menu_sub">
+              <a href="https://railapp.railway.gov.bd/verify-ticket">
+                <i class="fa fa-certificate"></i> <span>Verify Ticket</span></a
+              >
+            </li> -->
+
+            <!-- <li class="menu_sub">
+              <a href="https://eticket.railway.gov.bd/privacy-policy/en">
+                <i class="fa fa-address-book"></i>
+                <span>Privacy Policy</span></a
+              >
+            </li>
+            <li class="menu_sub">
+              <a href="https://eticket.railway.gov.bd/contact-us/en">
+                <i class="fa fa-map"></i> <span>Contact Us</span></a
+              >
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="content_wrapper">
+          <div class="course__details_block">
+            <div class="course_detailbanner mb-4"></div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="course__text_details mb-4"></div>
+
+                  <!-- <div class="course__content_block mb-4">
+                    <h2 class="mb-3">Instructions to Purchase Ticket</h2>
+                    <ul class="course_features_point">
+                      <li>
+                        <i class="fa fa-hand-o-right"></i> Tickets can be bought
+                        online ten days in advance.
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i> You can pay for the
+                        tickets using mobile financial services: bKash, Nagad,
+                        Rocket or debit/credit cards: Mastercard, Visa, DBBL
+                        Nexus. Other payment options will be available soon.
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i> In case of payment or
+                        transaction failure, the deducted amount would be
+                        refunded by your bank or MFS provider within 8 business
+                        days.
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>In case money has been
+                        deducted from your card / mobile wallet but you have not
+                        received a ticket confirmation, the deducted amount
+                        would be refunded by your bank or MFS provider within 8
+                        business days.
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i> In case of passengers
+                        downloading fake apps or any other app from Google Play
+                        which claim to sell train tickets of India Railway, the
+                        authorities will not take any liability.
+                      </li>
+                    </ul>
+                  </div> -->
+
+                  <div class="container">
+                    <h1>How to Purchase an Indian Railway Ticket</h1>
+
+                    <p>
+                      The Indian Railways is the world's fourth-largest railway
+                      network, and it is a popular way to travel around India.
+                      If you are planning to take a train journey, you will need
+                      to purchase a ticket. There are a few different ways to do
+                      this.
+                    </p>
+
+                    <h2>Online</h2>
+
+                    <p>
+                      The easiest way to purchase an Indian railway ticket is
+                      online. You can do this through the Indian Railways
+                      website or through a third-party website such as Cleartrip
+                      or IRCTCEasy. To purchase a ticket online, you will need
+                      to create an account and provide your personal
+                      information. You will also need to choose your train, date
+                      of travel, and class of travel.
+                    </p>
+
+                    <h2>By Phone</h2>
+
+                    <p>
+                      You can also purchase an Indian railway ticket by phone.
+                      To do this, you will need to call the Indian Railways
+                      Reservation Center. The phone number is 139. When you
+                      call, you will need to provide the same information as you
+                      would if you were purchasing a ticket online.
+                    </p>
+
+                    <h2>At a Railway Station</h2>
+
+                    <p>
+                      You can also purchase an Indian railway ticket at a
+                      railway station. To do this, you will need to go to the
+                      reservation counter and provide the same information as
+                      you would if you were purchasing a ticket online or by
+                      phone.
+                    </p>
+
+                    <h2>
+                      Steps on How to Purchase an Indian Railway Ticket Online
+                    </h2>
+
+                    <ol>
+                      <li>
+                        Go to the Indian Railways website or a third-party
+                        website such as Cleartrip or IRCTCEasy.
+                      </li>
+                      <li>Click on the "Book Tickets" tab.</li>
+                      <li>
+                        Enter your travel details, such as the train number,
+                        date of travel, and class of travel.
+                      </li>
+                      <li>
+                        Enter your passenger details, such as their names and
+                        ages.
+                      </li>
+                      <li>Select your payment method.</li>
+                      <li>Pay for your ticket.</li>
+                      <li>
+                        Print out your ticket or save it to your mobile device.
+                      </li>
+                    </ol>
+
+                    <h2>Tips for Purchasing an Indian Railway Ticket</h2>
+
+                    <ul>
+                      <li>
+                        Book your ticket in advance, especially if you are
+                        traveling during peak season.
+                      </li>
+                      <li>
+                        Be sure to check the train's schedule before you book
+                        your ticket.
+                      </li>
+                      <li>
+                        Choose the class of travel that best suits your needs
+                        and budget.
+                      </li>
+                      <li>
+                        Pay for your ticket with a credit card or debit card to
+                        avoid any transaction fees.
+                      </li>
+                      <li>
+                        Print out your ticket or save it to your mobile device
+                        so that you can show it to the railway staff when you
+                        board the train.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content_right_End -->
+      <!-- Footer -->
+      <footer class="footer mt-5" style="background: #fff">
+        <a
+          href="#"
+          class="d-flex justify-content-center align-items-center pt-2 pb-2"
+          style="background: rgb(210, 219, 232); text-decoration: none"
+        >
+          <div
+            class="rounded-circle"
+            style="width: 40px; max-width: 48px; overflow: hidden"
+          ></div>
+          <div class="ml-3">
+            <h3 class="ptb-15" style="color: #2451cc; font-weight: 700">
+              Cloud Wave Technologies
+            </h3>
+          </div>
+        </a>
+      </footer>
+      <!-- Footer_End -->
+    </div>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.mCustomScrollbar.concat.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.dcjqaccordion.2.7.js"
+    ></script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+  </body>
+</html>
